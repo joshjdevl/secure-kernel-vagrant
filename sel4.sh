@@ -24,7 +24,7 @@ chmod a+x $HOME/bin/repo
 
 sudo apt-fast -qq install -y git python
 
-mkdir $HOME/seL4test
+mkdir -p $HOME/seL4test
 cd $HOME/seL4test
 
 git config --global user.email "you@example.com"
@@ -70,9 +70,9 @@ pip install --user pyelftools
 cabal update
 cabal install MissingH data-ordlist split
 
-mkdir $HOME/camkes-project
+mkdir -p $HOME/camkes-project
 
-cd mkdir $HOME/camkes-project
+cd $HOME/camkes-project
 
 $HOME/bin/repo init -u https://github.com/seL4/camkes-manifest.git
 $HOME/bin/repo sync
