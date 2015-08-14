@@ -17,7 +17,7 @@ sudo apt-fast -qq install -y git phablet-tools
 sudo git config --global user.email "<email>"
 
 #http://sel4.systems/Download/
-mkdir -p $HOME/bin/repo
+mkdir -p $HOME/bin
 curl --silent https://storage.googleapis.com/git-repo-downloads/repo > $HOME/bin/repo
 
 chmod a+x $HOME/bin/repo
