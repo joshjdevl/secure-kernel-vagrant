@@ -20,6 +20,16 @@ sudo git config --global user.email "<email>"
 mkdir -p $HOME/bin
 curl --silent https://storage.googleapis.com/git-repo-downloads/repo > $HOME/bin/repo
 
+mkdir $HOME/installs
+pushd $HOME/installs
+wget http://zlib.net/zlib-1.2.8.tar.gz
+tar -xvf zlib-1.2.8.tar.gz
+cd zlib-1.2.8/
+./configure 
+make -j 5
+sudo make install
+popd
+
 chmod a+x $HOME/bin/repo
 
 sudo apt-fast -qq install -y git python
@@ -34,6 +44,7 @@ sudo apt-get -qq update
 sudo apt-fast -qq install -y build-essential realpath libxml2-utils python-tempita
 sudo apt-fast -qq install -y gcc-multilib ccache ncurses-dev
 sudo apt-fast -qq install -y cabal-install ghc libghc-missingh-dev libghc-split-dev 
+sudo cabal install zlib
 sudo cabal install --global cabal-install
 cabal update
 cabal install data-ordlist
