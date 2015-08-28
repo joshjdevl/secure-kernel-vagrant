@@ -34,6 +34,7 @@ sudo apt-get -qq update
 sudo apt-fast -qq install -y build-essential realpath libxml2-utils python-tempita
 sudo apt-fast -qq install -y gcc-multilib ccache ncurses-dev
 sudo apt-fast -qq install -y cabal-install ghc libghc-missingh-dev libghc-split-dev 
+sudo cabal install --global cabal-install
 cabal update
 cabal install data-ordlist
 sudo apt-fast -qq install -y python-pip python-jinja2 python-ply
