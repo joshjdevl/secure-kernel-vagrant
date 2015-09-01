@@ -4,6 +4,10 @@ set -e
 
 source cabal-env.sh
 
+if `tty -s`; then
+    mesg n
+fi
+
 # symbol links  
 mkdir -p $HOME/Development/bin
 cd $HOME/Development/bin
