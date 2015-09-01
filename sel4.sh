@@ -43,11 +43,11 @@ git config --global user.name "Your Name"
 sudo apt-get -qq update
 sudo apt-fast -qq install -y build-essential realpath libxml2-utils python-tempita
 sudo apt-fast -qq install -y gcc-multilib ccache ncurses-dev
-sudo apt-fast -qq install -y cabal-install ghc libghc-missingh-dev libghc-split-dev 
-sudo cabal install zlib
-sudo cabal install --global cabal-install
+#sudo apt-fast -qq install -y cabal-install ghc libghc-missingh-dev libghc-split-dev 
+#sudo cabal install zlib
+#sudo cabal install --global cabal-install
 cabal update
-cabal install data-ordlist
+cabal install zlib data-ordlist
 sudo apt-fast -qq install -y python-pip python-jinja2 python-ply
 sudo pip install --upgrade pip
 sudo pip install pyelftools
@@ -69,7 +69,7 @@ make --silent ia32_simulation_release_xml_defconfig
 make --silent
 
 #dependencies
-sudo apt-fast -qq install -y build-essential lib32z1 lib32ncurses5 lib32bz2-1.0 python python-pip python-tempita cabal-install realpath libxml2-utils qemu git python-jinja2 python-ply
+sudo apt-fast -qq install -y build-essential lib32z1 lib32ncurses5 lib32bz2-1.0 python python-pip python-tempita realpath libxml2-utils qemu git python-jinja2 python-ply
 
 cd /tmp
 sudo mkdir -p /opt/local
