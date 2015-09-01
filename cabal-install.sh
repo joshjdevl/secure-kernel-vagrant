@@ -33,6 +33,7 @@ mkdir $HOME/Development/bin/ghc-$GHC_VERSION
 make install
 
 # symbol links  
+mkdir -p $HOME/Development/bin
 cd $HOME/Development/bin
 rm -f ghc
 ln -s `pwd`/ghc-$GHC_VERSION ghc  
