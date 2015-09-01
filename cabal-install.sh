@@ -21,7 +21,7 @@ sudo -K
 mkdir -p $HOME/Downloads
 cd $HOME/Downloads
 wget "https://www.haskell.org/ghc/dist/$GHC_VERSION/$GHC_DIST_FILENAME"  
-tar xvfj $GHC_DIST_FILENAME  
+tar xfj $GHC_DIST_FILENAME  
 cd ghc-$GHC_VERSION  
 
 # install to  
@@ -55,10 +55,10 @@ rm -rfv $HOME/.ghc
 
 # clone dist  
 cd $HOME/Downloads  
-curl -O "https://www.haskell.org/cabal/release/cabal-$CABAL_VERSION/$CABAL_DIST_FILENAME"  
+curl --silent -O "https://www.haskell.org/cabal/release/cabal-$CABAL_VERSION/$CABAL_DIST_FILENAME"  
 
 # extract   
-tar xzvf $CABAL_DIST_FILENAME  
+tar xzf $CABAL_DIST_FILENAME  
 cd Cabal-$CABAL_VERSION  
 
 # build
@@ -76,7 +76,7 @@ cd $HOME/Downloads
 curl -O "https://www.haskell.org/cabal/release/cabal-install-$CABAL_INSTALL_VERSION/$CABAL_INSTALL_DIST_FILENAME"  
 
 # extract archive  
-tar xzvf $CABAL_INSTALL_DIST_FILENAME  
+tar xzf $CABAL_INSTALL_DIST_FILENAME  
 cd cabal-install-$CABAL_INSTALL_VERSION  
 
 # install  
