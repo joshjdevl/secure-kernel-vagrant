@@ -43,6 +43,13 @@ git config --global user.name "Your Name"
 sudo apt-get -qq update
 sudo apt-fast -qq install -y build-essential realpath libxml2-utils python-tempita
 sudo apt-fast -qq install -y gcc-multilib ccache ncurses-dev
+
+export GHC_HOME=$HOME/Development/bin/ghc
+export PATH=$GHC_HOME/bin:${PATH}
+
+export CABAL_HOME=$HOME/.cabal
+export PATH=$CABAL_HOME/bin:$PATH
+
 #sudo apt-fast -qq install -y cabal-install ghc libghc-missingh-dev libghc-split-dev 
 #sudo cabal install zlib
 #sudo cabal install --global cabal-install
