@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 GHC_VERSION="7.10.2"  
 ARCHITECTURE="x86_64"  
 # for 32 bit ARCHITECTURE="i386"      
