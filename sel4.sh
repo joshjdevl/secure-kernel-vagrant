@@ -81,6 +81,7 @@ pip install --user pyelftools
 
 cabal update
 cabal install MissingH data-ordlist split
+cabal install array mtl
 
 mkdir -p $HOME/camkes-project
 

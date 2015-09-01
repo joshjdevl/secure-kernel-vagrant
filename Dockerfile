@@ -9,3 +9,5 @@ RUN ./cabal-env.sh
 RUN ./cabal-install.sh
 ADD cabal-install2.sh $HOME/installs/cabal-install2.sh
 RUN ./cabal-install2.sh
+ADD cabal-install3.sh $HOME/installs/cabal-install3.sh
+RUN ./cabal-install3.sh
