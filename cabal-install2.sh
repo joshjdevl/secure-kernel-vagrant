@@ -16,7 +16,7 @@ export GHC_HOME=$HOME/Development/bin/ghc
 export PATH=$GHC_HOME/bin:${PATH}
 
 # to use updated path without log off
-source ~/.profile
+#source ~/.profile
 
 if `tty -s`; then
     mesg n
