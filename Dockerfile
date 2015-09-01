@@ -7,4 +7,4 @@ ADD cabal-install.sh $HOME/installs/cabal-install.sh
 WORKDIR $HOME/installs
 RUN ./cabal-env.sh
 RUN ./cabal-install.sh
-RUN ./cabal-install2.sh
+#RUN ./cabal-install2.sh

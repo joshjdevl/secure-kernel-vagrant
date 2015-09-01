@@ -28,7 +28,7 @@ rm -rfv $HOME/.ghc
 
 # clone dist  
 cd $HOME/Downloads  
-curl -Os "https://www.haskell.org/cabal/release/cabal-$CABAL_VERSION/$CABAL_DIST_FILENAME"  
+curl -O -s "https://www.haskell.org/cabal/release/cabal-$CABAL_VERSION/$CABAL_DIST_FILENAME"  
 
 # extract   
 tar xzf $CABAL_DIST_FILENAME  
@@ -46,7 +46,7 @@ rm -rfv Cabal-$CABAL_VERSION*
 
 # get distributive  
 cd $HOME/Downloads  
-curl -Os "https://www.haskell.org/cabal/release/cabal-install-$CABAL_INSTALL_VERSION/$CABAL_INSTALL_DIST_FILENAME"  
+curl -O -s "https://www.haskell.org/cabal/release/cabal-install-$CABAL_INSTALL_VERSION/$CABAL_INSTALL_DIST_FILENAME"  
 
 # extract archive  
 tar xzf $CABAL_INSTALL_DIST_FILENAME  
