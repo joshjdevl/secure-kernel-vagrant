@@ -4,10 +4,6 @@ set -e
 
 source cabal-env.sh
 
-if `tty -s`; then
-    mesg n
-fi
-
 # symbol links  
 mkdir -p $HOME/Development/bin
 cd $HOME/Development/bin
@@ -21,6 +17,10 @@ export PATH=$GHC_HOME/bin:${PATH}
 
 # to use updated path without log off
 source ~/.profile
+
+if `tty -s`; then
+    mesg n
+fi
 
 # remove temporary files  
 cd $HOME/Downloads  
