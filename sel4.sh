@@ -99,3 +99,7 @@ $HOME/bin/repo sync
 
 make --silent arm_simple_defconfig
 make --silent silentoldconfig
+
+make ia32_simple_defconfig
+make silentoldconfig
+make --silent
