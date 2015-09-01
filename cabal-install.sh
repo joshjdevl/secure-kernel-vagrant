@@ -73,7 +73,7 @@ rm -rfv Cabal-$CABAL_VERSION*
 
 # get distributive  
 cd $HOME/Downloads  
-curl -O "https://www.haskell.org/cabal/release/cabal-install-$CABAL_INSTALL_VERSION/$CABAL_INSTALL_DIST_FILENAME"  
+curl --silent -O "https://www.haskell.org/cabal/release/cabal-install-$CABAL_INSTALL_VERSION/$CABAL_INSTALL_DIST_FILENAME"  
 
 # extract archive  
 tar xzf $CABAL_INSTALL_DIST_FILENAME  
