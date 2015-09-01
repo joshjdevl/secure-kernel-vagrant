@@ -31,4 +31,7 @@ mkdir -p $HOME/Development/bin/ghc-$GHC_VERSION
 
 ./configure --prefix=$HOME/Development/bin/ghc-$GHC_VERSION  
 
-#make install
+if `tty -s`; then
+    mesg n
+fi
+make install &> makeinstall.log
