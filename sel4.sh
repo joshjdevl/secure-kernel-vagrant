@@ -24,8 +24,8 @@ wget -c --quiet http://zlib.net/zlib-1.2.8.tar.gz
 tar -xvf zlib-1.2.8.tar.gz
 cd zlib-1.2.8/
 ./configure 
-make -j 5
-sudo make install
+make --silent -j 5
+sudo make --silent install
 popd
 
 chmod a+x $HOME/bin/repo
@@ -98,6 +98,6 @@ $HOME/bin/repo sync
 make --silent arm_simple_defconfig
 make --silent silentoldconfig
 
-make ia32_simple_defconfig
-make silentoldconfig
+make --silent ia32_simple_defconfig
+make --silent silentoldconfig
 make --silent
