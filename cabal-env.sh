@@ -1,6 +1,4 @@
-#!/bin/bash
-
-set -e
+#!/bin/bash -ex
 
 GHC_VERSION="7.8.1"  
 ARCHITECTURE="x86_64"  

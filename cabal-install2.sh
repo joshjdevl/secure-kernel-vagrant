@@ -1,6 +1,4 @@
-#!/bin/bash
-
-set -e
+#!/bin/bash -ex
 
 source cabal-env.sh
 

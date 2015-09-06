@@ -1,6 +1,5 @@
-#!/bin/bash
+#!/bin/bash -ex
 
-set -e
 source cabal-env.sh
 
 sudo apt-get update && apt-get -y install python-software-properties software-properties-common && \
