@@ -2,7 +2,7 @@
 
 source cabal-env.sh
 
-sudo apt-get update && apt-get -y install python-software-properties software-properties-common && \
+sudo apt-get update && sudo apt-get -y install python-software-properties software-properties-common && \
 sudo add-apt-repository "deb http://gb.archive.ubuntu.com/ubuntu $(lsb_release -sc) universe" && \
 sudo apt-get update
 
