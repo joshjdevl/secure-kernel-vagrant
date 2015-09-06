@@ -6,7 +6,7 @@ sudo apt-get update && sudo apt-get -y install python-software-properties softwa
 sudo add-apt-repository "deb http://gb.archive.ubuntu.com/ubuntu $(lsb_release -sc) universe" && \
 sudo apt-get update
 
-sudo add-apt-repository ppa:saiarcot895/myppa && \
+sudo add-apt-repository ppa:saiarcot895/myppa -y && \
 sudo apt-get update && \
 sudo apt-get -y install apt-fast
 
