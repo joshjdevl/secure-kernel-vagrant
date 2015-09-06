@@ -20,7 +20,7 @@ curl --silent https://storage.googleapis.com/git-repo-downloads/repo > $HOME/bin
 
 mkdir -p $HOME/installs
 pushd $HOME/installs
-wget http://zlib.net/zlib-1.2.8.tar.gz
+wget -c --quiet http://zlib.net/zlib-1.2.8.tar.gz
 tar -xvf zlib-1.2.8.tar.gz
 cd zlib-1.2.8/
 ./configure 
@@ -78,7 +78,7 @@ sudo apt-fast -qq install -y build-essential lib32z1 lib32ncurses5 lib32bz2-1.0 
 
 cd /tmp
 sudo mkdir -p /opt/local
-wget https://sourcery.mentor.com/public/gnu_toolchain/arm-none-eabi/arm-2013.11-24-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
+wget -c --quiet https://sourcery.mentor.com/public/gnu_toolchain/arm-none-eabi/arm-2013.11-24-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
 tar xf arm-2013.11-24-arm-none-eabi-i686-pc-linux-gnu.tar.bz2
 sudo mv arm-2013.11 /opt/local/
 
