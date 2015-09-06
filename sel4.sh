@@ -18,7 +18,7 @@ sudo git config --global user.email "<email>"
 mkdir -p $HOME/bin
 curl --silent https://storage.googleapis.com/git-repo-downloads/repo > $HOME/bin/repo
 
-mkdir $HOME/installs
+mkdir -p $HOME/installs
 pushd $HOME/installs
 wget http://zlib.net/zlib-1.2.8.tar.gz
 tar -xvf zlib-1.2.8.tar.gz
