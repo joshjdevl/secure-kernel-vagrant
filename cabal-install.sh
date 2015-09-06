@@ -20,7 +20,7 @@ sudo -K
 # get distr  
 mkdir -p $HOME/Downloads
 cd $HOME/Downloads
-wget -q "https://www.haskell.org/ghc/dist/$GHC_VERSION/$GHC_DIST_FILENAME"  
+wget -c -q "https://www.haskell.org/ghc/dist/$GHC_VERSION/$GHC_DIST_FILENAME"  
 tar xfj $GHC_DIST_FILENAME  
 cd ghc-$GHC_VERSION  
 
